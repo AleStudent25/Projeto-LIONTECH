@@ -1,0 +1,234 @@
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px #f7b40d;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+h2 .brand {
+  color: #f7b40d;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f7b40d;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #eff160;
+}
+
+.message {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+}
+
+a.back-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 96%;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: background-color 0.3s;
+}
+
+a.back-button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  transition: color 0.3s;
+}
+
+/* Acessibilidade */
+.accessibility-controls {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.accessibility-controls button {
+  background-color: #000000;
+  color: #faf2f2;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(255, 247, 247, 0.596);
+  transition: background-color 0.3s;
+}
+
+.accessibility-controls button:hover {
+  background-color: #e0a800;
+}
+
+/* CONTRASTE ALTO */
+body.contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.contraste nav,
+body.contraste footer,
+body.contraste .produto,
+body.contraste .top-bar,
+body.contraste .search-container {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+body.contraste .btn-comprar,
+body.contraste button {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* ===== MODO CLARO ===== */
+body.light-mode {
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+body.light-mode .container {
+  background-color: #000000;
+  color: #000000;
+}
+
+body.light-mode h2 {
+  color: #ffffff;
+}
+
+body.light-mode footer {
+  color: #333333;
+}
+
+body.light-mode button {
+  background-color: #f7b40d;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+body.light-mode button:hover {
+   background-color: rgb(179, 117, 1);
+  color: white;
+}
+
+body.light-mode a.back-button {
+ background-color: #1b1b1b;
+  color: #d1cfcf;
+  border: 1px solid #f8f8f8;
+}
+
+body.light-mode a.back-button:hover {
+  background-color: #7c7c7c;
+  color: rgb(0, 0, 0);
+}
+
+/* ===== MODO ESCURO ===== */
+body.dark-mode {
+  background-color: rgb(5, 5, 5);
+  color: #070707;
+}
+
+body.dark-mode .container {
+  background-color: #111;
+  color: rgb(3, 3, 3);
+}
+
+body.dark-mode h2 {
+  color: white;
+}
+
+body.dark-mode footer {
+  color: #fffbfb;
+}
+
+body.dark-mode button {
+  background-color: #f7b40d;
+  color: #ffffff;
+}
+
+body.dark-mode button:hover {
+  background-color: #d4aa00;
+}
+
+body.dark-mode a.back-button {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+body.dark-mode a.back-button:hover {
+  background-color: #555;
+}
+
+
+

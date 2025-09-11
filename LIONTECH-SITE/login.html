@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - LionTech</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/liontec.png" type="image/x-icon">
+
+</head>
+<body>
+<div class="accessibility-controls">
+  <button onclick="ajustarZoom('aumentar')">A+</button>
+  <button onclick="ajustarZoom('padrao')">A</button>
+  <button onclick="ajustarZoom('diminuir')">A-</button>
+  <button id="toggle-dark-mode">🌗 </button>
+
+</div>
+
+      <header class="top-header">
+    <div class="container">
+      <a href="principal.html">
+        <img src="img/fundo.png" alt="Logo da Loja" class="logo">
+      </a>
+   <nav>
+      <a href="principal.html">Inicio</a>
+
+      <a href="iphones_novos.html">Iphones Novos</a>
+  
+      <a href="seminovos.html">Seminovos</a>
+  
+      <a href="smartwatch.html">AppleWatch</a>
+
+      <a href="https://wa.me/5521983783002" target="_blank">
+      <i class="fab fa-whatsapp"></i> Suporte</a>
+    
+      
+   </nav>
+    </div>
+  
+  </header>
+ <div class="top-bar">
+   <a href="login.html" title="Fazer login"><i class="fas fa-user"></i> Login</a>
+   <a href="carrinho.html" title="Carrinho"><i class="carrinho"></i>🛒 Carrinho</a>
+</div>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Faça seu<span class="brand"> Login</span></h2>
+      <form onsubmit="return validarLogin()">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="usuario" placeholder="nome do usuario" autocomplete="off" required>
+          <label for="usuario">Login</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="senha" placeholder="Senha" autocomplete="off" required>
+          <label for="senha">Senha</label>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100">Entrar</button>
+        <a href="cadastro.html" class="btn btn-outline-light w-100 mt-3">Cadastrar Novo Usuário</a>
+      
+        <button class="btn-outline-secondary w-100 mt-3" onclick="voltarPagina()">← Voltar</button>
+
+      </form>
+    </div>
+  </div>
+
+   <footer>
+    <p>&copy; Liontech. Todos os direitos reservados.</p>
+  </footer>
+
+<script src="js/login.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="js/script.js"></script>
+
+</body>
+</html>

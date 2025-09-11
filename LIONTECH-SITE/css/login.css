@@ -1,0 +1,159 @@
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo geral do container de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s;
+}
+
+/* Cartão de login */
+.login-card {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #f7b40d;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.login-card .brand {
+  color: #f7b40d;
+}
+
+/* Botões */
+.btn-warning {
+  background-color: #f7b40d;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: orange;
+  
+}
+
+.btn-outline-light {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: rgb(65, 64, 64);
+  color: black;
+}
+
+.btn-outline-secondary {
+  border: 1px solid white;
+  color: white;
+  background-color: #111;
+  border-radius: 5px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgb(65, 64, 64);
+  color: black;
+}
+
+
+/* MODO CLARO */
+body.light-mode {
+  background-color: #e4e1e1;
+  color: #000000;
+}
+
+body.light-mode .login-container {
+  background-color: #e6e6e6;
+}
+
+body.light-mode .login-card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .btn-outline-light {
+  border: 1px solid #fcfafa;
+  color: #d1cfcf;
+}
+
+body.light-mode .btn-outline-light:hover {
+  background-color: #e0e0e0;
+  color: rgb(8, 8, 8);
+}
+
+body.light-mode .btn-outline-secondary {
+  background-color: #1b1b1b;
+  color: #d1cfcf;
+  border: 1px solid #f8f8f8;
+}
+
+body.light-mode .btn-outline-secondary:hover {
+  background-color: #7c7c7c;
+  color: rgb(0, 0, 0);
+}
+
+
+/* MODO ESCURO */
+body.dark-mode {
+  background-color: #0c0c0c;
+  color: #ccc;
+}
+
+body.dark-mode .login-container {
+  background-color: #000;
+}
+
+body.dark-mode .login-card {
+  background-color: #141414;
+  color: #ccc;
+}
+
+body.dark-mode .btn-warning {
+  background-color: #f7b40d;
+  color: #000;
+}
+
+body.dark-mode .btn-warning:hover {
+  background-color: rgb(216, 216, 216);
+  color: #000;
+}
+
+body.dark-mode .btn-outline-light {
+  border: 1px solid white;
+  color: white;
+}
+
+body.dark-mode .btn-outline-light:hover {
+  background-color: rgb(65, 64, 64);
+  color: black;
+}
+
+body.dark-mode .btn-outline-secondary {
+  border: 1px solid white;
+  color: white;
+  background-color: #111;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: rgb(65, 64, 64);
+  color: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liontech - Cadastro</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="shortcut icon" href="img/liontec.png" type="image/x-icon">
+  
+</head>
+<body>
+<div class="accessibility-controls">
+  <button onclick="ajustarZoom('aumentar')">A+</button>
+  <button onclick="ajustarZoom('padrao')">A</button>
+  <button onclick="ajustarZoom('diminuir')">A-</button>
+  <button id="toggle-dark-mode">🌗</button>
+</div>
+
+  <div class="container">
+    <h2>Faça seu <span class="brand">Cadastro</span></h2>
+    <form id="cadastroForm" onsubmit="salvarCadastro(event)">
+      <input type="text" id="nome" placeholder="Nome completo" required>
+      <input type="date" id="dataNascimento">
+      <select id="sexo">
+        <option value="">Selecione o sexo</option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+      </select>
+      <input type="text" id="nomeMaterno" placeholder="Nome Materno">
+      <input type="text" id="cpf" placeholder="CPF">
+      <input type="text" id="celular" placeholder="Telefone Celular (+55)XX-XXXXXXXX">
+      <input type="text" id="fixo" placeholder="Telefone Fixo (+55)XX-XXXXXXXX">
+      <input type="text" id="endereco" placeholder="Endereço">
+      <input type="text" id="cep" placeholder="CEP">
+      <input type="text" id="login" placeholder="Login (6 letras)" required minlength="6">
+      <input type="password" id="senha" placeholder="Senha (8 letras)" required minlength="8">
+      <input type="password" id="confirmaSenha" placeholder="Confirma Senha" required>
+      <button type="submit">CADASTRAR</button>
+      <a href="principal.html" class="back-button">← Voltar</a>
+    </form>
+    <div id="mensagem" class="message"></div>
+  </div>
+
+  <footer>
+    <p>&copy; Liontech. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/cadastro.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
